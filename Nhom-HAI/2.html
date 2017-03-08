@@ -1,0 +1,234 @@
+<!--Link bootstrap: http://www.layoutit.com/-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 3, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+	
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">
+				<div class="navbar-header">
+					 
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button> <a class="navbar-brand" href="#">Trang chủ</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Thông tin<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Đề ngẫu nhiên</a>
+								</li>
+								<li>
+									<a href="#">Bộ đề</a>
+								</li>
+								<li>
+									<a href="#">Thư viện câu hỏi</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Lí thuyết</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Thông tin trang</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Hướng dẫn</a>
+						</li>
+					</ul>
+					<form class="navbar-form navbar-left" role="search">
+						<div class="form-group">
+							<input type="text" class="form-control">
+						</div> 
+						<button type="submit" class="btn btn-default">
+							Tìm kiếm
+						</button>
+					</form>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#">Đăng nhập</a>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hồ sơ<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Lịch sử thi</a>
+								</li>
+								<li>
+									<a href="#">Cài đặt thông tin</a>
+								</li>
+								<li class="divider">
+								</li>
+								<li>
+									<a href="#">Đăng xuất</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+	
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-10">
+			<h3 class="text-center">
+				Kết quả đề thi ngẫu nhiên
+			</h3>
+		</div>
+		<div class="col-md-2">
+			<h3>
+				Thao tác
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+		</div>
+		<div class="col-md-6">
+			<h3 class="text-center">
+				Không đạt
+			</h3>
+		</div>
+		<div class="col-md-3">
+			<h3 class="text-center text-danger">
+				0/20
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">
+			<img alt="Bootstrap Image Preview" src="data:image/png;base64,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" width="100">
+		</div>
+		<div class="col-md-3">
+			<img alt="Bootstrap Image Preview" src="data:image/png;base64,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" width="100">
+		</div>
+		<div class="col-md-3">
+			<img alt="Bootstrap Image Preview" src="data:image/png;base64,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" width="100">
+		</div>
+		<div class="col-md-3">
+			<img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 1
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100" class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 2
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 3
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 4
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 5
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 6
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 7
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 8
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 9
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 10
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 11
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 12
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 13
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 14
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 15
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 16
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 17
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+		<div class="col-md-2">
+			<h3 class="text-center">
+				Câu 18
+			</h3><img alt="Bootstrap Image Preview" src="http://new-biz.tk/wp-content/uploads/2015/08/144360x250.png" width="100 class="img-circle">
+		</div>
+	</div>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
