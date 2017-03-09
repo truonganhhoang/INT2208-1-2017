@@ -14,4 +14,3 @@ Dự án website học tiếng anh:
     + Ngoài ra, người dùng còn có thể kiểm tra thông tin của các người dùng khác, như thông tin cá nhân, số điểm người chơi đã đạt được, các bài học mà người chơi đó đã hoàn thành,…
 
 Nguồn tham khảo: Ứng dụng Duolingo.
-
