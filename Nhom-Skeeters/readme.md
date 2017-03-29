@@ -1,9 +1,14 @@
 Welcome to the web_thi_online wiki!
 - MÔN CÔNG NGHỆ PHẦN MỀM
 
-- Nhóm: Skeeters
+- Nhóm: Sketers
+- Thành viên nhóm:
++ Lương Văn Quý
++ Nguyễn Thị Nhàn
++ Hà Văn Linh
++ Nguyễn Mạnh Hùng
 - Team Leader: Lương Văn Quý
-
+- Ứng dụng gốc tham khảo để lại: Không có, tự phát triển theo ý tưởng của nhóm.
  CHỨC NĂNG CHƯƠNG TRÌNH 
 
 Sau khi khảo sát và xác định được các yêu cầu của hệ thống, có thể phân tích để đưa ra các quy trình nghiệp vụ chung của hệ thống bao gồm các phần: 
