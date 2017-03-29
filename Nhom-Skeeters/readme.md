@@ -63,6 +63,7 @@ Mục tiêu : Chức năng này cho phép người dùng đóng góp thêm vào 
 *7. Chức năng phản hồi 
  Chức năng này cho phép các thành viên cũng như người dùng truy cập vào website có thể  đóng góp những ý kiến về mức độ khó của các câu hỏi, yêu cầu hướng dẫn cách thức làm bài trắc nghiệm trên website như thế nào, nêu ra những ý kiến đóng góp để website được hoàn thiện hơn v.v…
 
-- Ngôn ngữ sử dụng: PHP
-- Thư viện code giao diện: Bootstrap framework
+- Ngôn ngữ sử dụng: Ruby
+- framework: Rails và angular
+- Thư viện code giao diện: bootstrap
 
