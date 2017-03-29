@@ -17,7 +17,7 @@
       <div id="header">
          <div class="container-fluid">
             <div class="row">
-               <h2 class="text-center title-web"><strong>Trang quản trị</strong><br />Hệ thống thi trực tuyến</h2>
+               <h2 class="text-center title-web"><strong>Trang cộng tác viên</strong><br />Hệ thống thi trực tuyến</h2>
                <nav class="navbar navbar-inverse main-menu alert-info">
                   <form class="navbar-form navbar-right search-form">
                      <div class="form-group input-group">
@@ -70,7 +70,6 @@
                <ul class="nav nav-pills nav-stacked admin-menu well">
                   <li class="active"><a href="#" data-target-id="home"><i class="fa fa-home fa-fw"></i>Trang chủ</a></li>
                   <li><a href="#" data-target-id="widgets"><i class="fa fa-list-alt fa-fw"></i>Quản lí đề thi</a></li>
-                  <li><a href="#" data-target-id="pages"><i class="fa fa-file-o fa-fw"></i>Quản lí người dùng</a></li>
                   <li><a href="#" data-target-id="charts"><i class="fa fa-bar-chart-o fa-fw"></i>Phê duyệt câu hỏi</a></li>
                   <li><a href="#" data-target-id="table"><i class="fa fa-table fa-fw"></i>Phản hồi người dùng</a></li>
                   <li><a href="#" data-target-id="forms"><i class="fa fa-tasks fa-fw"></i>Forms</a></li>
