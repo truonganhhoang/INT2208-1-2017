@@ -24,12 +24,12 @@
 		Khi tôi nhấn vào logo trang chủ  
 		Tôi sẽ được chuyển đến trang chủ  
 	+ #####Scenario 2 : Chọn chức năng   
-	Khi tôi chọn  1 trong các nút tương ứng với chức năng  
-		Tôi sẽ được chuyển đến trang  chức năng tương ứng    
+		Khi tôi chọn  1 trong các nút tương ứng với chức năng  
+		Tôi sẽ được chuyển đến trang chức năng tương ứng    
 	####Feature 2:  Thi và trả kết quả
 	+ #####Scenario 1:  Thi
-		Khi chọn vào chức năng thi tại trang chủ  
-		Thì sẽ được đưa đến trang thi tương ứng  
+		Khi tôi chọn vào chức năng thi tại trang chủ  
+		Tôi sẽ được đưa đến trang thi tương ứng  
 		Khi tôi chọn 1 câu trả lời  
 		Tôi sẽ nhìn thấy nó được tích  
 	+ #####Scenario 2: Trả kết quả
@@ -46,7 +46,7 @@
 		Tôi sẽ được đưa đến trang  biển báo  
 		Tôi sẽ nhìn thấy các biển báo với công dụng của chúng  
 	####Feature 4:  Xem mẹo thi
-	+ #####Scenario 1: Xem mẹo
+	+ #####Scenario 1: Xem mẹo  
 		Khi tôi nhấn vào chức năng mẹo thi tại trang chủ  
 		Tôi sẽ được đưa đến trang xem mẹo  
 		Tôi sẽ nhìn thấy các mẹo thi  
