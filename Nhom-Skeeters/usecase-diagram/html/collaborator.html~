@@ -36,7 +36,7 @@
                   <div class="navbar-collapse collapse" id="menu">
                       <form action="" method="get">
                      <ul class="nav navbar-nav navbar">
-                        <li><a href="5.html"><span class="glyphicon glyphicon-home"></span> Xem website</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-home"></span> Xem website</a></li>
                          <li class="dropdown">
                            <a data-toggle="dropdown" href="" class="pages"><span class="glyphicon glyphicon-user"></span>
                            Tài khoản</a>
@@ -49,11 +49,11 @@
                            <a data-toggle="dropdown" href="" class="pages"><i class="fa fa-book" aria-hidden="true"></i>
                            Pages</a>
                            <ul class="dropdown-menu">
-                              <li><a href="2.html">Trang bắt đầu thi</a></li>
-                              <li><a href="1.html">Trang thi</a></li>
-                              <li><a href="4.html">Trang đăng ký</a></li>
-                              <li><a href="3.html">Trang profile</a></li>
-                              <li><a href="5.html">Trang chủ</a></li>
+                              <li><a href="#">Trang bắt đầu thi</a></li>
+                              <li><a href="#">Trang thi</a></li>
+                              <li><a href="#">Trang đăng ký</a></li>
+                              <li><a href="#">Trang profile</a></li>
+                              <li><a href="#">Trang chủ</a></li>
                            </ul>
                         </li>
                      </ul>
@@ -112,7 +112,7 @@
                                  </div>
                                       </div>
                              
-                              <a href="5.html" class="btn btn-success btn-lg btn-block" role="button"><span class="glyphicon glyphicon-globe"></span> Xem Website</a>
+                              <a href="#" class="btn btn-success btn-lg btn-block" role="button"><span class="glyphicon glyphicon-globe"></span> Xem Website</a>
                            </div>
                         </div>
                      </div>
