@@ -1,0 +1,8 @@
+Feature: show examation history
+	As a member
+	I want to show examation history
+	So that I can see examation history page
+Scenario: examation
+	Given I sees member page
+	When I click show history examation button
+	Then I see examation history page
