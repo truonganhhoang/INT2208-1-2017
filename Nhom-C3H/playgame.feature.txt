@@ -1,0 +1,14 @@
+Feature: Play game 
+	As an user
+	I want to start games
+	
+    Scenario: Start games and you lose
+	  Given A question
+	  When I click "Start Games"
+          And Click answer button
+	  Then I see the score
+    Scenario: Start games and you win
+          Given A question
+	  When I click "Start Games"
+          And Click answer button
+	  Then I see the score
