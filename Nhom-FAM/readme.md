@@ -1,12 +1,12 @@
-﻿ỨNG DỤNG WEB TRUYỆN SONG NGỮ ANH - VIỆT
-
-Ðề tài: Tạo ứng dụng web đọc truyện song ngữ Anh - Việt dựa trên ứng dụng truyện song ngữ trên google play
-
-Thành viên: 
+﻿Nhóm FAM: Thành viên: 
 	Ngô Hải Yến
 	Bùi Thị Diệu Linh
 	Ðinh Khắc Quý
 	Vũ Hoàng Long
+
+ỨNG DỤNG WEB TRUYỆN SONG NGỮ ANH - VIỆT
+
+Ðề tài: Tạo ứng dụng web đọc truyện song ngữ Anh - Việt dựa trên ứng dụng Truyện song ngữ trên Google Play
 
 Thời gian dự kiến hoàn thành: 2 tháng (T3/2017 - T5/2017)
 Nội dung: là một ứng dụng đọc truyện với 2 ngôn ngữ tiếng Việt và tiếng Anh với các thể loại truyện ngụ ngôn, truyện cổ tích, truyện cười ...
