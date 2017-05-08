@@ -6,6 +6,16 @@
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
     </head><body>
+        <script>
+        function aud_play_pause() {
+            var myAudio = document.getElementById("myTune");
+            if (myAudio.paused) {
+                myAudio.play();
+            } else {
+                myAudio.pause();
+            }
+        }
+        </script>
         <div class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
@@ -55,7 +65,10 @@
                     <div class="col-md-2">
                         <div class="row">
                             <div class="col-md-12">
-                                <a class="btn btn-block btn-lg btn-primary" data-toggle="button">Rain</a>
+                        <audio id="myTune">
+                            <source src="./audio/rain.mp3">
+                        </audio>
+                                <a class="btn btn-block btn-lg btn-primary" data-toggle="button" onclick = "aud_play_pause()">Rain</a>
                             </div>
                         </div>
                         <div class="row">
