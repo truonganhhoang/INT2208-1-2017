@@ -5,26 +5,18 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<title>Bootstrap 3, from LayoutIt!</title>
+		<title>4</title>
 
 		<meta name="description" content="Source code generated using layoutit.com">
 		<meta name="author" content="LayoutIt!">
-
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<style type="text/css" media="screen">
-		footer{
-			Padding-top:60%
-		}
-		</style>
-		<style>
-		body{
-			background-color: #FFFF99;
-		}
-		h1{
-			Padding-bottom: 20%
-			
-		}
+			footer{
+				Padding-top:10%
+			}
+			body{
+				background-color: #FFFF99;
+			}
 		</style>
 	</head>
 	<body>
@@ -32,16 +24,23 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="row">
-					<div class="col-md-12">
+					<div class"col-md-12">
 						<center>
 							<h1 style="color: red">Game Over</h1>
-						</center>
-							</br>
+						</center>							
+						<center><img src="https://i.ytimg.com/vi/KJOjrXA9fZg/hqdefault.jpg"></center>
 						<center>
-							New score:
+							<?php 
+								session_start();
+								echo 'New score: '.($_SESSION["dem"]-1); 
+							?>
+							
 						</center>
-						<center>
-							Best score:
+						<center>						
+							<?php
+								if ($_SESSION["best"]<$_SESSION["dem"]) {$_SESSION["best"]=($_SESSION["dem"]-1);}
+								echo 'Best score: '.$_SESSION["best"];
+							?>
 						</center>
 						</br>
 					</div>
@@ -49,12 +48,13 @@
 				<div class="row">
 					<div class="col-md-12">
 						<center>
-							<a href = "C:\Users\Van Hieu\Desktop\Nhom-C3H\2.html" >
+							<a href = "3.php" style="text-decoration: none;">
 							<button type="button" class="btn btn-default">
-								Chơi Lại 
+								Play Again
+								<?php $_SESSION["dem"]=0; ?>
 							</button>
 							</a>
-							<a href = "C:\Users\Van Hieu\Desktop\Nhom-C3H\1.html"> 
+							<a href = "index.php" style="text-decoration: none;"> 
 							<button type="button" class="btn btn-default">
 								Menu 
 							</button></a>

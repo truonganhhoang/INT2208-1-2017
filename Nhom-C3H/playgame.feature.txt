@@ -1,14 +1,22 @@
-Feature: Play game 
-	As an user
-	I want to start games
-	
-    Scenario: Start games and you lose
-	  Given A question
-	  When I click "Start Games"
-          And Click answer button
-	  Then I see the score
-    Scenario: Start games and you win
-          Given A question
-	  When I click "Start Games"
-          And Click answer button
-	  Then I see the score
+﻿    Feature: Play game
+       As an user
+       I want to start game
+
+           Scenario: Start game
+            	Given 2 buttons "Start Game" and "Back"
+	When I click "Start Game"
+	Then I should see the question
+	When I click "Back"
+	Then I should see the list of topic
+           Scenario: Play game
+	Given A question
+	When I choose right answer
+	Then I see the next question
+	When I choose wrong question
+	Then I should see my score
+           Scenario: Game Over
+	Given 2 buttons "Chơi lại" and "Menu"
+	When I click "Chơi lại"
+	Then I should be given a question
+	When I click "Menu"
+	Then I should see the list of topic

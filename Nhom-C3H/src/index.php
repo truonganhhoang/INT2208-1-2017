@@ -9,13 +9,13 @@
 
 	<meta name="description" content="Source code generated using layoutit.com">
 	<meta name="author" content="LayoutIt!">
-
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<style type="text/css" media="screen">
 		footer{
-			Padding-top:70%
-		
+			Padding-top:20%		
+		}
+		body{
+			background-color:#FFFF99
 		}
 	</style>
 </head>
@@ -26,16 +26,16 @@
 	</header>
 	<div class="container">
 		<ol>
-			<li><a href="2.php" style="text-decoration: none;">Relationship</a></li>
-			<li><a href"#" style="text-decoration: none;">Human body</a></li>
-			<li><a href="#" style="text-decoration: none;">Subject</a></li>
-			<li><a href="#" style="text-decoration: none;">Animal</a></li>
-			<li><a href="#" style="text-decoration: none;">Natural</a></li>
-			<li><a href="#" style="text-decoration: none;">Food</a></li>
-			<li><a href="#" style="text-decoration: none;">Country</a></li>
-			<li><a href="#" style="text-decoration: none;">Room</a></li>
-			<li><a href="#" style="text-decoration: none;">Personality</a></li>
-			<li><a href="#" style="text-decoration: none;">Sport</a></li>
+			<li><a href="2.php?topic=0" style="text-decoration: none;">Relationship</a></li>
+			<li><a href="2.php?topic=1" style="text-decoration: none;">Human body</a></li>
+			<li><a href="2.php?topic=2" style="text-decoration: none;">Subject</a></li>
+			<li><a href="2.php?topic=3" style="text-decoration: none;">Animal</a></li>
+			<li><a href="2.php?topic=4" style="text-decoration: none;">Natural</a></li>
+			<li><a href="2.php?topic=5" style="text-decoration: none;">Food</a></li>
+			<li><a href="2.php?topic=6" style="text-decoration: none;">Country</a></li>
+			<li><a href="2.php?topic=7" style="text-decoration: none;">Room</a></li>
+			<li><a href="2.php?topic=8" style="text-decoration: none;">Sport</a></li>
+			<li><a href="2.php?topic=9" style="text-decoration: none;">All</a></li>
 		</ol>
 		<div class="footer" >
 			<center>
