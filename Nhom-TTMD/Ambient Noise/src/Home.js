@@ -1,6 +1,15 @@
 var React = require('react');
+import YouTube from 'react-youtube';
 
-var Home = React.createClass( {
+class Home extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        open: false,
+        youtube: false,
+      }
+    }
+
     Rain() {
             var myAudio = document.getElementById("rain");
             if (myAudio.paused) {
@@ -8,7 +17,7 @@ var Home = React.createClass( {
             } else {
                 myAudio.pause();
             }
-    },
+    }
     Cafe() {
             var myAudio = document.getElementById("cafe");
             if (myAudio.paused) {
@@ -16,7 +25,7 @@ var Home = React.createClass( {
             } else {
                 myAudio.pause();
             }
-    },
+    }
     Bird() {
             var myAudio = document.getElementById("bird");
             if (myAudio.paused) {
@@ -24,7 +33,7 @@ var Home = React.createClass( {
             } else {
                 myAudio.pause();
             }
-    },
+    }
     Wind() {
             var myAudio = document.getElementById("wind");
             if (myAudio.paused) {
@@ -32,7 +41,7 @@ var Home = React.createClass( {
             } else {
                 myAudio.pause();
             }
-    },
+    }
     Frog() {
             var myAudio = document.getElementById("frog");
             if (myAudio.paused) {
@@ -40,7 +49,7 @@ var Home = React.createClass( {
             } else {
                 myAudio.pause();
             }
-    },
+    }
     Ocean() {
             var myAudio = document.getElementById("ocean");
             if (myAudio.paused) {
@@ -48,7 +57,7 @@ var Home = React.createClass( {
             } else {
                 myAudio.pause();
             }
-    },
+    }
     stopNoise() {
         var myAudio1 = document.getElementById("rain");
         var myAudio2 = document.getElementById("cafe");
@@ -74,11 +83,28 @@ var Home = React.createClass( {
         if (myAudio6.play) {
             myAudio6.pause();
         }
-    },
+    }
+
+    _handleDropdown() {
+      this.setState({
+        open: !this.state.open
+      })
+    }
+
     render () {
+        var youtubeContainer = {
+          position: "absolute"
+        };
+        var opts = {
+          height: '390',
+          width: '640',
+          playerVars: {
+            autoplay: 1
+          }
+        };
+        var dropdownActions = this.state.open ? "dropdown open" : "dropdown";
         var Background = "./img/beautiful-rainy-weather-wallpapers-2.jpg";
         return(
-            
             <div Class = "Home">
         <div className="navbar navbar-default navbar-static-top">
             <div className="container">
@@ -102,14 +128,25 @@ var Home = React.createClass( {
                         <li>
                             <a href="group">Group</a>
                         </li>
-                        <li className="disabled">
-                            <a href="#">More</a>
+                        <li className={dropdownActions} onClick={this._handleDropdown.bind(this)}>
+                            <a className="dropdown-toggle" type="button" href="#">
+                              More <span className="caret"/>
+                            </a>
+                            <ul className="dropdown-menu">
+                              <li onClick={()=> this.setState({youtube: !this.state.youtube})}>
+                                <button className="btn" type="button">
+                                 {this.state.youtube ? <img src={require('./img/checked.png')}/> : null} Show Youtube Window
+                                </button>
+                                <button className="btn disabled" type="button">Live chat with everyone</button>
+                                <button className="btn disabled" type="button">News</button>
+                              </li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-         
+
         <div className="section text-right">
           <div className="background-image" style={{backgroundImage: 'url(' + require('./img/beautiful-rainy-weather-wallpapers-2.jpg') + ')'}}></div>
             <div className="container">
@@ -126,6 +163,14 @@ var Home = React.createClass( {
                             encourages individuals to think at a higher, abstract level, and consequently
                             exhibit higher creativity.</p>
                     </div>
+
+                    {this.state.youtube ?
+                      <div style={youtubeContainer}>
+                        <YouTube
+                          videoId="7kKg_GCbvk4"
+                          opts={opts}
+                        />
+                      </div> : null}
 
                     <div className="col-md-2">
                         <div className="row">
@@ -158,6 +203,8 @@ var Home = React.createClass( {
                                 <source src={require("./audio/wind.mp3")} />
                             </audio>
                                 <a className="btn btn-block btn-lg btn-primary" onClick={this.Wind}>Wind</a>
+                            </div>
+                        </div>
                         <div className="row">
                             <div className="col-md-12">
                             <audio id="frog"  loop = "loop">
@@ -179,12 +226,11 @@ var Home = React.createClass( {
                                 <a className="btn btn-block btn-default btn-lg" onClick={this.stopNoise}>Clear Noise</a>
                             </div>
                         </div>
-                        </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div><footer className="section section-primary">
+        </div>
+        <footer className="section section-primary">
             <div className="container">
                 <div className="row">
                     <div className="col-sm-6">
@@ -216,9 +262,8 @@ var Home = React.createClass( {
                 </div>
             </div>
         </footer>
-        
 </div>
         );
-    },
-});
+    }
+};
 export default Home;

@@ -1,6 +1,15 @@
 var React = require('react');
+import YouTube from 'react-youtube';
 
-var Group = React.createClass({
+class Group extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        open: false,
+        youtube: false,
+      }
+    }
+
     Storm() {
             var myAudio = document.getElementById("rain");
             var myAudio2 = document.getElementById("wind");
@@ -11,7 +20,7 @@ var Group = React.createClass({
                 myAudio.pause();
                 myAudio2.pause();
             }
-    },
+    }
     CafeInRainy() {
             var myAudio = document.getElementById("cafe");
             var myAudio2 = document.getElementById("rain");
@@ -22,7 +31,7 @@ var Group = React.createClass({
                 myAudio.pause();
                 myAudio2.pause();
             }
-    },
+    }
     Night() {
             var myAudio = document.getElementById("frog");
             var myAudio2 = document.getElementById("wind");
@@ -33,7 +42,7 @@ var Group = React.createClass({
                 myAudio.pause();
                 myAudio2.pause();
             }
-    },
+    }
     Nature() {
             var myAudio = document.getElementById("wind");
             var myAudio2 = document.getElementById("frog");
@@ -47,7 +56,7 @@ var Group = React.createClass({
                 myAudio2.pause();
                 myAudio3.pause();
             }
-    },
+    }
     Sea() {
             var myAudio = document.getElementById("ocean");
             var myAudio2 = document.getElementById("bird");
@@ -58,7 +67,7 @@ var Group = React.createClass({
                 myAudio.pause();
                 myAudio2.pause();
             }
-    },
+    }
     stopNoise() {
         var myAudio1 = document.getElementById("rain");
         var myAudio2 = document.getElementById("cafe");
@@ -84,8 +93,26 @@ var Group = React.createClass({
         if (myAudio6.play) {
             myAudio6.pause();
         }
-    },
+    }
+
+    _handleDropdown() {
+      this.setState({
+        open: !this.state.open
+      })
+    }
+
     render() {
+      var youtubeContainer = {
+        position: "absolute"
+      };
+      var opts = {
+        height: '390',
+        width: '640',
+        playerVars: {
+          autoplay: 1
+        }
+      };
+      var dropdownActions = this.state.open ? "dropdown open" : "dropdown";
         return(
         <div className = "Group">
     <div className="navbar navbar-default navbar-static-top">
@@ -110,13 +137,32 @@ var Group = React.createClass({
             <li className="active">
               <a href="#">Group</a>
             </li>
-            <li className="disabled">
-              <a href="#">More</a>
+            <li className={dropdownActions} onClick={this._handleDropdown.bind(this)}>
+                <a className="dropdown-toggle" type="button" href="#">
+                  More <span className="caret"/>
+                </a>
+                <ul className="dropdown-menu">
+                  <li onClick={()=> this.setState({youtube: !this.state.youtube})}>
+                    <button className="btn" type="button">
+                     {this.state.youtube ? <img src={require('./img/checked.png')}/> : null} Show Youtube Window
+                    </button>
+                    <button className="btn disabled" type="button">Live chat with everyone</button>
+                    <button className="btn disabled" type="button">News</button>
+                  </li>
+                </ul>
             </li>
           </ul>
         </div>
+        {this.state.youtube ?
+          <div style={youtubeContainer}>
+            <YouTube
+              videoId="7kKg_GCbvk4"
+              opts={opts}
+            />
+          </div> : null}
       </div>
     </div>
+
     <div className="section text-right">
           <div className="background-image" style={{backgroundImage: 'url(' + require('./img/colored_raindrops_by_devilkkw-d4be8lo.jpg') + ')'}}></div>
       <div className="container">
@@ -129,6 +175,7 @@ var Group = React.createClass({
               encourages individuals to think at a higher, abstract level, and consequently
               exhibit higher creativity.”</p>
           </div>
+
           <div className="col-md-2">
             <div className="row">
               <div className="col-md-12">
@@ -141,7 +188,7 @@ var Group = React.createClass({
                </audio>
                <audio id="bird"  loop = "loop">
                     <source src={require("./audio/bird.mp3")} />
-               </audio>               
+               </audio>
                <audio id="wind"  loop = "loop">
                     <source src={require("./audio/wind.mp3")} />
                </audio>
@@ -153,7 +200,7 @@ var Group = React.createClass({
                </audio>
                <audio id="ocean"  loop = "loop">
                     <source src={require("./audio/ocean.mp3")} />
-               </audio>               
+               </audio>
 
                 <a className="btn btn-block btn-lg btn-primary" onClick={this.Storm}>Storm</a>
               </div>
@@ -163,6 +210,7 @@ var Group = React.createClass({
                 <a className="btn btn-block btn-lg btn-primary" onClick={this.CafeInRainy}>Cafe in rainy</a>
               </div>
             </div>
+
             <div className="row">
               <div className="col-md-12">
                 <a className="btn btn-block btn-lg btn-primary" onClick={this.Night}>Night</a>
@@ -189,6 +237,7 @@ var Group = React.createClass({
               </div>
             </div>
           </div>
+
           <div className="col-md-4">
             <h1 className="text-info text-left">Journal Article Is Noise Always Bad? Exploring the Effects of Ambient
               Noise on Creative Cognition</h1>
@@ -196,6 +245,7 @@ var Group = React.createClass({
         </div>
       </div>
     </div>
+
     <footer className="section section-primary">
       <div className="container">
         <div className="row">
@@ -230,6 +280,6 @@ var Group = React.createClass({
     </footer>
     </div>
         );
-    },
-});
+    }
+};
 export default Group;

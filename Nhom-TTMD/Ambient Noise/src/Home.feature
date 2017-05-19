@@ -1,12 +1,13 @@
-Feature: Using sound in home page
+Feature: Testing UI, theme,path and button click in homepage
 
-Scenario: Ran using rain and cafe audio
-Given   : Ran is being in home page
-When    : Ran click on Rain button
-Then    : Audio rain is activated
-Add     : Ran click on Cafe button
-Then    : Audio cafe is activated
-Add     : Ran click on Ocean button
-Then    : Audio ocean is activated
-Add     : Ran click on Ocean button again
-Then    : Audio cafe is Unactivated
+Background:
+Given   : Ran is being in home page in beta version
+When    : Ran see 3 button to change router
+And     : Ran see 6 button audio and 1 button clear audio
+And     : Ran click on Rain button
+Then    : Rain sound is activated
+When    : Each button have right source 
+And     : Ran see 2 line use h1 html text
+And     : Ran see a footer
+And     : Ran see background image
+And     : Ran see big bar name Ambient Noise
