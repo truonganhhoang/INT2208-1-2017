@@ -1,4 +1,4 @@
-Feature: Test Online
+Feature: Menu
 	As an user
 	I want to test my knowledge
 	
